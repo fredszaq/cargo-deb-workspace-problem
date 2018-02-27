@@ -1,0 +1,15 @@
+[package]
+name = "my-deb"
+version = "0.1.0"
+authors = ["Thibaut Lorrain <thibaut.lorrain@snips.ai>"]
+
+[dependencies]
+
+
+
+[package.metadata.deb]
+# this is not working (but worked a few weeks back)
+assets = [[ "stuff.json", "usr/share/stuff.json" , "644" ]] 
+
+# this would work but is starting from the root of the workspace
+#assets = [[ "my-deb/stuff.json", "usr/share/stuff.json" , "644" ]] 

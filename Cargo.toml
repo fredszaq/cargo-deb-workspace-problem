@@ -1,0 +1,9 @@
+[package]
+name = "cargo-deb-test"
+version = "0.1.0"
+authors = ["Thibaut Lorrain <thibaut.lorrain@snips.ai>"]
+
+[dependencies]
+
+[workspace]
+members = ["my-deb"]
